@@ -1,11 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Switch} from 'react-router-dom';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
-    <div className="App">
+    <Route>
+      <Switch exact path='/'>
+        <Navbar />
+      </Switch>
+    </Route>    
       
-    </div>
   );
 }
 
